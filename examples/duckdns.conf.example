@@ -1,0 +1,8 @@
+# DuckDNS config — illustrates the template syntax, not verified against a
+# live account. Check https://www.duckdns.org/spec.jsp before using.
+
+DDNS_URL_TEMPLATE="https://www.duckdns.org/update?domains=%HOSTNAME%&token=%TOKEN%&ipv6=%IP%"
+DDNS_SUCCESS_PATTERN="^OK"
+
+DDNS_HOSTNAME="your-subdomain"
+DDNS_TOKEN="your-duckdns-token"

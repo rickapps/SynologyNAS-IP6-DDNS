@@ -1,0 +1,12 @@
+# No-IP config — illustrates the template syntax, not verified against a
+# live account. No-IP's update API embeds credentials as HTTP Basic Auth
+# in the URL (user:pass@host) rather than as query parameters; confirm
+# current parameter names and IPv6 support against No-IP's own docs before
+# relying on this.
+
+DDNS_URL_TEMPLATE="https://%USERNAME%:%PASSWORD%@dynupdate.no-ip.com/nic/update?hostname=%HOSTNAME%&myip=%IP%"
+DDNS_SUCCESS_PATTERN="^(good|nochg)"
+
+DDNS_USERNAME="your-noip-username"
+DDNS_PASSWORD="your-noip-password"
+DDNS_HOSTNAME="yourhost.ddns.net"

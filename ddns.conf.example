@@ -1,0 +1,12 @@
+# Dynu.com config — verified working.
+#
+# Copy this file to ddns.conf, fill in your real values, and lock it down:
+#   cp ddns.conf.example ddns.conf
+#   chmod 600 ddns.conf
+
+DDNS_URL_TEMPLATE="https://api.dynu.com/nic/update?username=%USERNAME%&password=%PASSWORD%&group=%GROUP%&myipv6=%IP%"
+DDNS_SUCCESS_PATTERN="^(good|nochg)"
+
+DDNS_USERNAME="your-dynu-username"
+DDNS_PASSWORD="your-dynu-password"
+DDNS_GROUP="your-dynu-group-name"
